@@ -11,6 +11,7 @@
       padding: 0;
       background-color: #f9f9f9;
       color: #333;
+      font-size: 1rem; /* Base font size for easy scaling */
     }
     .container {
       max-width: 800px;
@@ -42,6 +43,19 @@
     }
     ul {
       padding-left: 20px;
+    }
+
+    /* Mobile optimization */
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.95rem; /* Slightly smaller body text */
+      }
+      .title-line1 {
+        font-size: 2.5rem; /* Larger titles for small screens */
+      }
+      .title-line2 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>

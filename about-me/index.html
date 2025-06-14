@@ -22,13 +22,19 @@
       padding: 40px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       border-radius: 10px;
+    }
+
+    .about-wrapper {
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+      flex-direction: row;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: nowrap;
     }
 
     .text-section {
-      flex: 1 1 50%;
+      flex: 1;
     }
 
     .text-section h1 {
@@ -43,10 +49,10 @@
     }
 
     .image-section {
-      flex: 1 1 50%;
+      flex: 1;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: flex-start;
     }
 
     .image-section img {
@@ -57,35 +63,31 @@
     }
 
     @media (max-width: 768px) {
-      .container {
+      .about-wrapper {
         flex-direction: column;
         text-align: center;
       }
 
       .text-section, .image-section {
-        flex: 1 1 100%;
-      }
-
-      .text-section {
-        margin-bottom: 30px;
+        width: 100%;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="text-section">
-      <h1>About Me</h1>
-      <p>
-        <!-- Replace this with your own description -->
-        Hi, I’m Scott, a.k.a. Scooter! I’ve been working on computers since I was a kid. Whether it’s fixing issues, upgrading hardware,
-        or building high-performance machines from scratch, I’m passionate about helping people get the best tech experience possible.
-        I serve the Novi, Michigan area and love connecting with the local community.
-      </p>
-    </div>
-    <div class="image-section">
-      <!-- Replace 'your-photo.jpg' with the actual image filename -->
-      <img src="IMG_5856.JPEG" alt="Scooter" />
+    <div class="about-wrapper">
+      <div class="text-section">
+        <h1>About Me</h1>
+        <p>
+          Hi, I’m Scott, a.k.a. Scooter! I’ve been working on computers since I was a kid. Whether it’s fixing issues,
+          upgrading hardware, or building high-performance machines from scratch, I’m passionate about helping people
+          get the best tech experience possible. I serve the Novi, Michigan area and love connecting with the local community.
+        </p>
+      </div>
+      <div class="image-section">
+        <img src="IMG_5856.JPEG" alt="Photo of Scooter">
+      </div>
     </div>
   </div>
 </body>

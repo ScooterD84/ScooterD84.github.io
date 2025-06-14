@@ -7,14 +7,22 @@
   <title>Scooter’s Computer Repairs & PC Builds</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
+    html, body {
       margin: 0;
       padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overscroll-behavior: none;
+      font-family: 'Quicksand', sans-serif;
     }
 
     body {
-      font-family: 'Quicksand', sans-serif;
+      background-image: url('/bg_image.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       color: #333;
       line-height: 1.6;
     }
@@ -61,6 +69,10 @@
       background-color: #e0e0e0;
     }
 
+    main {
+      flex: 1;
+    }
+
     .container {
       max-width: 950px;
       margin: 40px auto;
@@ -85,6 +97,10 @@
       padding-left: 20px;
     }
 
+    li {
+      margin-bottom: 12px;
+    }
+
     a {
       color: #0077cc;
       text-decoration: none;
@@ -99,25 +115,8 @@
       color: white;
       text-align: center;
       padding: 20px 10px;
-      margin-top: 40px;
       font-size: 0.9rem;
     }
-li {
-  margin-bottom: 12px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-image: url('/bg_image.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-}
-
   </style>
 </head>
 <body>
@@ -132,46 +131,48 @@ body {
     <a class="nav-link" href="#location">About Me</a>
   </nav>
 
-  <div class="container">
-    <section id="repairs">
-      <h2>Computer Repairs</h2>
-      <p>I can fix and upgrade laptops, desktops, gaming PCs, and workstation PCs.</p>
-      <ul>
-        <li>Repairs: Most labor will be below $120. Completion between 10 minutes and 1 week.</li>
-        <li>Upgrades: Most labor will be below $80. Completion in less than 1 hour.</li>
-      </ul>
-    </section>
+  <main>
+    <div class="container">
+      <section id="repairs">
+        <h2>Computer Repairs</h2>
+        <p>I can fix and upgrade laptops, desktops, gaming PCs, and workstation PCs.</p>
+        <ul>
+          <li>Repairs: Most labor will be below $120. Completion between 10 minutes and 1 week.</li>
+          <li>Upgrades: Most labor will be below $80. Completion in less than 1 hour.</li>
+        </ul>
+      </section>
 
-    <section id="builds">
-      <h2>Custom PC Builds</h2>
-      <p>I can build high-performance gaming and workstation PCs for individuals and businesses. I’ll work with you to design the best system for your budget and use case.</p>
-      <p>Pricing: $50 for consultation + Cost of parts + $100 for building, testing, and optimization.</p>
-      <ul>
-        <li>1–5 builds: Timeline is 1–2 weeks.</li>
-        <li>6–30 builds: Timeline is around 1 month.</li>
-      </ul>
-    </section>
+      <section id="builds">
+        <h2>Custom PC Builds</h2>
+        <p>I can build high-performance gaming and workstation PCs for individuals and businesses. I’ll work with you to design the best system for your budget and use case.</p>
+        <p>Pricing: $50 for consultation + Cost of parts + $100 for building, testing, and optimization.</p>
+        <ul>
+          <li>1–5 builds: Timeline is 1–2 weeks.</li>
+          <li>6–30 builds: Timeline is around 1 month.</li>
+        </ul>
+      </section>
 
-    <section id="location">
-      <h2>Location</h2>
-      <p>I don’t have a physical store — instead, I’ll meet you wherever is convenient within 30 minutes of Novi, Michigan.</p>
-    </section>
+      <section id="location">
+        <h2>Location</h2>
+        <p>I don’t have a physical store — instead, I’ll meet you wherever is convenient within 30 minutes of Novi, Michigan.</p>
+      </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Contact me through the website:</p>
-      <ul>
-        <li><a href="/repair-contact/">Repair & Upgrade Contact Form</a></li>
-        <li><a href="/build-contact/">PC Build Contact Form</a></li>
-      </ul>
-      <p>Or contact me directly:</p>
-      <ul>
-        <li>Email: scooterspcs@gmail.com</li>
-        <li>Phone: 248-763-2279 (call or text)</li>
-      </ul>
-      <p>I'll respond between 3pm and 9pm.</p>
-    </section>
-  </div>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Contact me through the website:</p>
+        <ul>
+          <li><a href="/repair-contact/">Repair & Upgrade Contact Form</a></li>
+          <li><a href="/build-contact/">PC Build Contact Form</a></li>
+        </ul>
+        <p>Or contact me directly:</p>
+        <ul>
+          <li>Email: scooterspcs@gmail.com</li>
+          <li>Phone: 248-763-2279 (call or text)</li>
+        </ul>
+        <p>I'll respond between 3pm and 9pm.</p>
+      </section>
+    </div>
+  </main>
 
   <footer>
     &copy; 2025 Scooter’s Computer Repairs & PC Builds. All rights reserved.

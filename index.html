@@ -43,6 +43,35 @@
     ul {
       padding-left: 20px;
     }
+
+    /* Optional Styling for Contact Form */
+    form {
+      margin-top: 30px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 0.8em 1.5em;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
   </style>
 </head>
 <body>
@@ -74,6 +103,24 @@
       <li>Phone: 248-763-2279 (call or text)</li>
     </ul>
     <p>I'll respond between 3pm and 9pm.</p>
+
+    <!-- Contact Form Starts Here -->
+    <form action="https://formspree.io/f/mldnndla" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="make_model">Make and Model:</label>
+      <input type="text" id="make_model" name="make_model" required>
+
+      <label for="message">Describe Your Issue:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Contact Form Ends Here -->
   </div>
 </body>
 </html>
